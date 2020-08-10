@@ -11,8 +11,8 @@
     "content_scripts": [
         {
             "matches": [
-                "http://card2brain.ch/*",
-                "https://card2brain.ch/*"
+                "http://card2brain.ch/learn/*",
+                "https://card2brain.ch/learn/*"
             ],
             "js": [
                 "listener.js"
