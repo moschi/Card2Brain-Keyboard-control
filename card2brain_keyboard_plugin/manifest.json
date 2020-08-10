@@ -1,0 +1,28 @@
+{
+    "name": "Card2Brain Keyboard control",
+    "version": "1.0",
+    "description": "Allows some navigation on card2brain.ch with the keyboard.",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://card2brain.ch/*",
+                "https://card2brain.ch/*"
+            ],
+            "js": [
+                "listener.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "https://card2brain.ch/",
+        "activeTab"
+    ],
+    "manifest_version": 2
+}
