@@ -1,6 +1,6 @@
 console.log("injected card2brain keyboard control script");
 console.log(`usage:
-space = 'Antwort zeigen'
+space = 'Antwort zeigen / Antwort prüfen'
 j = 'Gewusst'
 n = 'Nicht gewusst'
 s = 'Nächste Karte'
@@ -15,7 +15,13 @@ function getDontKnowAnswer() {
 }
 
 function getShowAnswer() {
-    return document.querySelector("div.ad-toggle > a");
+    let showAnswerButton = document.querySelector("div.ad-toggle > a");
+
+    if (showAnswerButton === undefined) {
+        showAnswerButton = document.getElementById("checkAnswer");
+    }
+
+    return showAnswerButton;
 }
 
 function getNextCard() {

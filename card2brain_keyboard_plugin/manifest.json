@@ -1,6 +1,6 @@
 {
     "name": "Card2Brain Keyboard control",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Allows some navigation on card2brain.ch with the keyboard.",
     "background": {
         "scripts": [
