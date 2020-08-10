@@ -1,6 +1,5 @@
 console.log("injected card2brain keyboard control script");
-console.log(`
-usage:
+console.log(`usage:
 space = 'Antwort zeigen'
 j = 'Gewusst'
 n = 'Nicht gewusst'
@@ -42,15 +41,12 @@ function registerEventListeners() {
                 clickElement = getNextCard();
                 break;
             default:
-                console.log(e.keyCode);
                 clickElement = null;
                 break;
         }
 
         if (clickElement !== null && clickElement !== undefined) {
             clickElement.click();
-        } else {
-            console.log(clickElement);
         }
     });
 }
